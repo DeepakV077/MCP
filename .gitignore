@@ -24,10 +24,28 @@ wheels/
 venv/
 ENV/
 env/
+.venv/
 
-# Environment Variables
+# Environment Variables & Secrets
 .env
 .env.local
+.env.*.local
+.env.production.local
+*.env
+secrets/
+*.secrets
+
+# API Keys & Credentials
+*.key
+*.pem
+*.crt
+*.p8
+*.pfx
+credentials.json
+secrets.json
+*.credentials
+auth.json
+config.secret.json
 
 # IDE
 .vscode/
@@ -35,17 +53,51 @@ env/
 *.swp
 *.swo
 *~
+*.sublime-project
+*.sublime-workspace
 
 # OS
 .DS_Store
 Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 
 # Project specific
 *.pdf
 *.log
+logs/
+*.csv
+*.xlsx
+*.xls
+profile-*.pdf
 
 # Byte-compiled / optimized / DLL files
 *.pyc
+*.pyo
 
 # Distribution / packaging
 *.whl
+*.egg
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# User-specific files
+.idea/workspace.xml
+.idea/tasks.xml
+local.properties
+
+# API response files
+api_*.json
+response_*.json
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
